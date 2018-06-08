@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belly Button BioDiversity</title>
+
+        <!-- Javascripts to be imported -->
+        
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        
+
+        <!-- <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/assets.css" type="text/css">
+        
+    </head>
+
+    <body>
+    
+        <div class="container-fluid">
+            
+            <div class="row">
+                <div class="col-md-12 jumbotron text-center">
+                    <h1>Belly Button Biodiversity Dashboard</h1>
+                    <p>Use the interactive charts below to explore the dataset</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="well well-sm">
+                        <h5>Select Sample</h5>
+                        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Sample MetaData</div>
+                        <div id="sample-MetaData" class="panel-body"></div>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div id="pie_chart"> </div>
+                </div>
+                <!-- <div class="col-md-5">
+                        <div id="gauge"> Wash Frequency Chart </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="bubble"></div>
+                </div>
+            
+            </div>
+
+        </div>
+        
+        <script src="../static/search.js" type="text/Javascript">
+        console.log("I am here")
+        </script>
+    
+    <div class = "container-fluid">
+        <footer>
+            <p> @ Santhosh Boot Camp Homework Interactive Web Visualization</p>
+        </footer>
+    </div>      
+    
+    </body>
+</html>
